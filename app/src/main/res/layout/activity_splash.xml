@@ -5,14 +5,22 @@
     android:orientation="horizontal"
     android:background="@drawable/gradient_background" >
 
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/survey_logo" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgLogo"
         android:gravity="center_horizontal"
-        android:textSize="15dp"
-        android:text="@string/splash_title" />
+        android:text="@string/splash_title"
+        android:textColor="@color/colorTitle"
+        android:textSize="15dp" />
 
 </RelativeLayout>
